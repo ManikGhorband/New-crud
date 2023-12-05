@@ -1,0 +1,168 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "emp": [
+    {
+      "id": 5,
+      "name": "G.h Raisoni College Of Engineering And Management Wagoli Pune",
+      "email": "wefwe",
+      "address": "G.H College Near Wagholi",
+      "phone": "09156663652"
+    },
+    {
+      "id": 6,
+      "name": "G.h Raisoni College Of Engineering And Management Wagoli Pune",
+      "email": "wefwe",
+      "address": "G.H College Near Wagholi",
+      "phone": "09156663652"
+    },
+    {
+      "id": 7,
+      "name": "Manik Ghorbandewe",
+      "email": "wefweewfre",
+      "address": "G h Raisoni college near\nWagholi pune",
+      "phone": "09156663652"
+    },
+    {
+      "id": 8,
+      "name": "Manik Ghorband",
+      "email": "ghorbandmanik@gmail.com",
+      "address": "G h Raisoni college near",
+      "phone": "09156663652"
+    },
+    {
+      "id": 9,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 10,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 11,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 12,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 13,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 14,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 15,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 16,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 17,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 18,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 19,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 20,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 21,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 22,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 23,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 24,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 25,
+      "name": "",
+      "email": "",
+      "address": "",
+      "phone": ""
+    }
+  ]
+}
