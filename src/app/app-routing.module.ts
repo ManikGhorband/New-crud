@@ -2,19 +2,22 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddComponent } from './add/add.component';
 import { ListempComponent } from './listemp/listemp.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   {
-    path: 'list',
-    redirectTo: 'list',
+    path: 'listemp',
+    redirectTo: 'listemp',
     pathMatch: 'full',
   },
   {
     path:"addemp", component:AddComponent
   },
   {
-    path:"list", component:ListempComponent
+    path:"listemp", component:ListempComponent
   },
+  { path: 'edit/:id', component: EditComponent },
+
 ];
 
 @NgModule({

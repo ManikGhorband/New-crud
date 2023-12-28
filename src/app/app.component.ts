@@ -9,26 +9,6 @@ import { Subscriber } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-//   title = 'crudapp';
-//   itemForm: any;
-//   employee:any
-//   constructor(private fb: FormBuilder,private service:CustomService){
-//     this.itemForm = this.fb.group({
-//       id: [null],
-//       name: ['', Validators.required],
-//       lastname: [''],
-//     });
-//   }
-
-//   onSubmit(){
-// this.service.Adddata(this.itemForm.value).subscribe((res)=>{
-//   this.employee=res
-//   console.log(this.employee)
-// })
-//   }
-
-
-
-
+  title: any;
 
 }

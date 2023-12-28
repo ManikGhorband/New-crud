@@ -1,56 +1,63 @@
 import { Component } from '@angular/core';
 import { CustomService } from '../custom.service';
 import { first } from 'rxjs';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-listemp',
   templateUrl: './listemp.component.html',
-  styleUrls: ['./listemp.component.css']
+  styleUrls: ['./listemp.component.css'],
 })
 export class ListempComponent {
-employee: any;
-id!: string;
+  employee: any;
+  users!: any[];
+  status_toggle = false;
+  id!: string;
   loading: boolean | undefined;
   alertService: any;
   form: any;
-constructor(private service:CustomService){
-this.getlist();
-this.getby(this.id,this.data);
-}
-ngOnInit(){
-
-}
-
-getlist(){
-  this.service.getdata().subscribe((res)=>{
-    this.employee=res
-  })
-}
-
-delete(id:any){
-  this.service.deletedata(id).subscribe((res)=>{
-alert("user delete")
-  })
-  this.getlist()
-}
-getby(id:any,data:any){
-  // this.service.getbye(this.id,this.data).subscribe((res)=>{
-
-  // })
-}
-  data(id: string, data: any) {
-    throw new Error('Method not implemented.');
+  userId: number = 1;
+  data: any[] = [];
+  currentStatus: boolean = false;
+  constructor(private service: CustomService, private toastr: ToastrService) {
+    this.getlist();
   }
-// editItem(id:number){
-//   this.service.updateedata(id,).subscribe((res)=>{})
-// }
- updateUser() {
-  // this.service.updateedata(this.id)
-  //     .pipe(first())
-  //     .subscribe(() => {
-  //         this.alertService.success('User updated', { keepAfterRouteChange: true });
-  //        // this.router.navigate(['../../'], { relativeTo: this.route });
-  //     })
-  //     .add(() => this.loading = false);
-}
+  ngOnInit() {
+    this.getlist();
+    this.fetchData();
+  }
+
+  getlist() {
+    this.service.getdata().subscribe((res) => {
+      this.employee = res;
+    });
+  }
+
+  delete(u_id: any) {
+    this.service.deletedata(u_id).subscribe((res) => {
+      this.toastr.success('Data Delete Sucessfull');
+
+    });
+    this.fetchData();
+  }
+
+  fetchData(): void {
+    this.service.getDatas().subscribe((response) => {
+      this.data = response;
+    });
+  }
+
+  updateStatusToggle(u_id: number, newStatus: boolean): void {
+    this.service.updateStatusToggle(u_id, newStatus).subscribe(() => {
+      const updatedData = this.data.map((item) =>
+        item.id === u_id ? { ...item, status_toggle: newStatus } : item
+      );
+      this.data = updatedData;
+    });
+  }
+  onToggleChange(event: MatSlideToggleChange,u_id: number,status_toggle: boolean): void {
+    const newStatus = event.checked;
+    this.service.updateStatusToggle(u_id, newStatus).subscribe(() => { });
+  }
 }

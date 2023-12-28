@@ -1,0 +1,20 @@
+
+
+
+  <form (ngSubmit)="updateUsers()"  style="    width: 40pc;
+  margin-left: 10pc;">
+    <h4>Details</h4>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input class="form-control" type="text" name="user" id="name" [(ngModel)]="userData.user_name" />
+      <label for="password">Password:</label>
+      <input class="form-control" type="text" id="password" name="password" [(ngModel)]="userData.password" />
+      <label for="email">Email:</label>
+      <input class="form-control" type="text" id="email" name="email" [(ngModel)]="userData.e_mail" />
+      <label for="role">Role:</label>
+      <input class="form-control" type="text" id="role" name="roles" [(ngModel)]="userData.role" />
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+  

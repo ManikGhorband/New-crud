@@ -16,48 +16,76 @@
   "profile": {
     "name": "typicode"
   },
-  "emp": [
-    {
-      "id": 5,
-      "name": "G.h Raisoni College Of Engineering And Management Wagoli Pune",
-      "email": "wefwe",
-      "address": "G.H College Near Wagholi",
-      "phone": "09156663652"
-    },
+  "temp-users": [
     {
       "id": 6,
-      "name": "G.h Raisoni College Of Engineering And Management Wagoli Pune",
-      "email": "wefwe",
-      "address": "G.H College Near Wagholi",
-      "phone": "09156663652"
+      "user_name": "s",
+      "e_mail": "ssdfdfd",
+      "password": "s",
+      "role": "s",
+      "status_toggle": true
     },
     {
       "id": 7,
-      "name": "Manik Ghorbandewe",
-      "email": "wefweewfre",
-      "address": "G h Raisoni college near\nWagholi pune",
-      "phone": "09156663652"
+      "user_name": "s",
+      "e_mail": "s",
+      "password": "s",
+      "role": "ssdd",
+      "status_toggle": true
     },
     {
       "id": 8,
-      "name": "Manik Ghorband",
-      "email": "ghorbandmanik@gmail.com",
-      "address": "G h Raisoni college near",
-      "phone": "09156663652"
+      "user_name": "ghorbandmanik@gmail.com",
+      "e_mail": "ghorbandmanik@gmail.com",
+      "password": "1111",
+      "role": "w",
+      "status_toggle": true
     },
     {
       "id": 9,
-      "name": "",
-      "email": "",
-      "address": "",
-      "phone": ""
+      "user_name": "j",
+      "e_mail": "hjk",
+      "password": "jkh",
+      "role": "k",
+      "status_toggle": true
     },
     {
       "id": 10,
-      "name": "Manik Ghorband",
-      "email": "ghorbandmanik@gmail.com",
-      "address": "G h Raisoni college near, Wagholi pune",
-      "phone": "09156663652"
+      "user_name": "jhkj",
+      "e_mail": "kj",
+      "password": "kj",
+      "role": "kjkj",
+      "status_toggle": true
+    },
+    {
+      "id": 11,
+      "user_name": "jk",
+      "e_mail": "kjhqkh",
+      "password": "kj",
+      "role": "khqwk",
+      "status_toggle": true
+    },
+    {
+      "id": 12,
+      "user_name": "Ff",
+      "e_mail": "F",
+      "password": "F",
+      "role": "F",
+      "status_toggle": true
+    },
+    {
+      "id": 13,
+      "user_name": "",
+      "e_mail": "",
+      "password": "",
+      "role": ""
+    },
+    {
+      "id": 14,
+      "user_name": "k",
+      "e_mail": "k",
+      "password": "k",
+      "role": "k"
     }
   ]
 }

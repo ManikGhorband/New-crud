@@ -5,30 +5,38 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CustomService {
-url='http://localhost:3000/'
-
+ private url='http://23.22.246.141:8000/'
+private apiUrl = 'http://23.22.246.141:8000/api/temp-users';
+private updateapi="http://23.22.246.141:8000/api/temp-users/ ";
   constructor(private http:HttpClient) { }
 
 Adddata(data:any):Observable<any>{
-  return this.http.post(this.url+"emp", data);
+  return this.http.post(this.url+"api/temp-users/", data);
 }
 getdata():Observable<any>{
-  return this.http.get(this.url+"emp");
+  return this.http.get(this.url+"api/temp-users");
+}
+deletedata(u_id:any):Observable<any>{
+  return this.http.delete(this.url+"api/temp-users/"+u_id);
 }
 
 
-deletedata(id:any):Observable<any>{
-  return this.http.delete(this.url+"emp/"+id);
+getUser(id: number): Observable<any> {
+  return this.http.get(`${this.apiUrl}/${id}`);
 }
-// getbye(id:any,data:any):Observable<any>{
 
-//   return this.http.put(this.url + "emp/" + id, data);
-// }
-// updateedata(id: any): Observable<any> {
-
-//   return this.http.put(this.url+"emp/",id);
-
-// }
-
-
+updateUser(u_id: number, status_toggle: any): Observable<any> {
+  return this.http.put(`${this.apiUrl}/${u_id+"/"}`, status_toggle);
 }
+
+
+getDatas(): Observable<any[]> {
+  return this.http.get<any[]>(this.updateapi);
+}
+
+updateStatusToggle(u_id: number, newStatus: boolean): Observable<any> {
+  const url = `http://23.22.246.141:8000/api/temp-users/${u_id}/update/`;
+  return this.http.put(url, { status_toggle: newStatus });
+}
+}
+
